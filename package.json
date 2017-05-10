@@ -1,0 +1,28 @@
+{
+  "name": "sollinda-sdk-js",
+  "version": "0.1.0",
+  "description": "Sollinda JS SDK - NodeJS and Browser",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sollinda/sollinda-sdk-js.git"
+  },
+  "author": "Sollinda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sollinda/sollinda-sdk-js/issues"
+  },
+  "homepage": "https://github.com/sollinda/sollinda-sdk-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "dependencies": {
+    "xhr-request": "^1.0.1"
+  }
+}
