@@ -18,7 +18,7 @@ function request(url) {
 
 class CountryProfiles {
   get(id, type = 'iso-alpha-2') {
-    return request(`${baseUrl}/country-profiles/${type}/${id}`);
+    return request(`${baseUrl}/country-profiles/${type}/${id.toLowerCase()}`);
   }
   list() {
     return request(`${baseUrl}/country-profiles/list`);
