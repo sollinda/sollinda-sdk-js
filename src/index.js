@@ -11,7 +11,9 @@ function request(url) {
         resolve(data);
       }
     });
-  }).catch(e => Error('Not found'));
+  }).catch(e => {
+    throw Error('Not found');
+  });
 }
 
 class CountryProfiles {
